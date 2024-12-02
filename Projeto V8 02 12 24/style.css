@@ -1,0 +1,470 @@
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #24009a;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-login button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #24009a;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #24009a;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 15px #24009a;
+    transform: scale(1.05);
+}
+
+/* Estiliza o label e alinha checkbox + texto */
+form .form-control[type="checkbox"] {
+    width: auto; /* Corrige largura do checkbox */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+form label {
+    display: flex; /* Alinha checkbox e texto lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    color: #fff; /* Define a cor branca no texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    gap: 10px; /* Espaçamento entre o checkbox e o texto */
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%; 
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5d5d5d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 45px;
+    line-height: 40px; /* ALTERA DISTANCIA ENTRE AS DUAS LINHAS DO TITULO PRINCIPAL */
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #24009a;
+    font-size: 50px; /* Para alterar o tamanho apenas do span */
+}
+
+.topo-do-site .txt-topo-site h1 span.equipe{
+    font-size: 45px; /* Para alterar o tamanho apenas do span */
+    color: #24009a;
+    font-weight: 900;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0; /* Para se distanciar, criar margem */
+
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative; /* para a animação poder iniciar, não ficar estática */
+    animation: flutuar 2s ease-in-out infinite alternate;
+    transform: scale(1.20);
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILOS DAS ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px; /* Distância/gap entre blocos */
+} 
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    width: 370px;  /* Definindo a largura fixa */
+    height: 400px; /* Definindo a altura fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05px);
+    box-shadow: 0 0 50px #ffffff9a;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #24009a;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{ /* Espaço img 3 e Texto */
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{ /* Titulo 3 */
+    font-size: 40px; 
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color:#24009a;
+    display: block;
+}
+
+.sobre .txt-sobre p{ 
+    margin: 30px 0; /* Espaço entre paragráfos */
+    text-align: justify;/* Justificar paragráfo */
+}
+
+.btn-social button{
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;/* Para arredondar Botão Redes Sociais */
+    border: none;
+    background-color: #24009a;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px; /* cima/baixo - laterais */
+    transition: .2s;
+}
+
+/* SEPARADOR PARA TER DIVISÃO ESTILIZADA */
+.separator {
+    padding: 40px 4%;
+    box-shadow: 0 0 60px 10px #ffffff1d; /* linha de separação rodapé */
+}
+
+/* ESTILO DO PORTFÓLIO */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff54; /* horizontal vertical desfoque espalhamento curvacor */
+}
+
+section.portfolio .flex{
+    justify-content: space-around; /* ou gap: 40px; Espaço entre a caixa */
+    margin-top: 60px; /* Margem entre bloco e titulo */
+}
+
+.img-port{ /* Cria bloco para port */
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%; /* X e Y */
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px; /* Arredondar bordar */
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%; /* X e Y */
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff000052;
+    border-radius: 40px;
+    display: flex; /* Posicionar/Centralizar */
+    align-items: center;
+    justify-content: center; /* END Posicionar/Centralizar */
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto; /* Centralizar blocos de pergunta e msg */
+    display: flex; /* Elementos lado a lado */
+    justify-content: center;
+    flex-direction: column; /* lado a lado Ou cima a baixo */
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #434343;
+    border: 0; /* Tira borda blocos fala comigo */
+    outline: 0; /* Tira borda blocos fala comigo */
+    padding: 20px 15px; /* Espaçamento */
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* EXEMPLO --> 
+form input::placeholder{
+    color: #00FF08;
+}
+*/
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .btn-enviar button{
+    width: 30%;
+    background-color: #24009a;
+    background-image: linear-gradient(to right, #24009a, #06012e);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d; /* linha de separação rodapé */
+}
+
+footer .flex{
+    justify-content: space-between; /* para colocar a logo de um lado e o botão de rede social de outro */
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+/* bordas */
+.borda{
+    border-top: 2px solid #24009a;
+}
+
+.bordadois{
+    border-top: 2px solid #000000;
+}
+
+footer .line-footer p i{
+    color: #24009a;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    /* SE QUISER ALTERAR A ORDEM DE IMAGEM E TEXTO 
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    */
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{ 
+        padding: 20px 8%; /* centraliza img */
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+     }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    } 
+
+    /* SOBRE */
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTIFOLIO */
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{ 
+        width: 100%;
+        max-width: 360px; /* Garantir o tamanho máximo dos blocos de portfolio */
+        margin: 0 auto;/* Para centralizar */
+    }
+
+    section.portfolio .flex{
+        gap: 60px; /* Espaço entre blocos das imagens rotativas */
+    }
+
+    /* RODAPÉ */
+    footer .flex{
+        flex-direction: column; /* Switch de Logo Main e Redes */
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center; /* Centraliza a Logo */
+    }
+}
