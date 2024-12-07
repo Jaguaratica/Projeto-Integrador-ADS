@@ -1,3 +1,3 @@
 # Projeto-Integrador-ADS
 
-Este sistema foi desenvolvido para atender às demandas de suporte técnico em TI, proporcionando uma plataforma eficiente para gerenciamento de chamados, análise de desempenho e comunicação em tempo real.
+Este sistema está atualmente em desenvolvimento, uma plataforma criada para gerenciamento de chamados e comunicação em tempo real.
